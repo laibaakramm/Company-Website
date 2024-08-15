@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Name</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Company Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home" onclick="showPage('home')">Home</a></li>
+                <li><a href="#contact" onclick="showPage('contact')">Contact Us</a></li>
+                <li><a href="#why-choose-us" onclick="showPage('why-choose-us')">Why Choose Us</a></li>
+                <li><a href="#services" onclick="showPage('services')">Services</a></li>
+                <li><a href="#hiring" onclick="showPage('hiring')">Hiring Vacancy</a></li>
+                <li><a href="#login" onclick="showPage('login')">Login</a></li>
+                <li><a href="#profile" onclick="showPage('profile')">Profile Portal</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Page -->
+    <section id="home" class="page">
+        <div class="banner">
+            <h1>Welcome to Our Company</h1>
+            <p>Your success is our mission</p>
+            <button>Learn More</button>
+        </div>
+        <div class="about">
+            <h2>About Us</h2>
+            <p>Company introduction, mission, and vision statements.</p>
+        </div>
+        <div class="services-overview">
+            <h2>Our Services</h2>
+            <p>Quick summary with links to detailed service pages.</p>
+        </div>
+        <div class="testimonials">
+            <h2>Client Testimonials</h2>
+            <p>Quotes and logos from clients.</p>
+        </div>
+        <div class="latest-projects">
+            <h2>Latest Projects</h2>
+            <p>Images and descriptions of recent work.</p>
+        </div>
+        <footer>
+            <p>Contact us at: contact@company.com</p>
+            <p>Follow us on social media</p>
+        </footer>
+    </section>
+
+    <!-- Contact Us Page -->
+    <section id="contact" class="page" style="display:none;">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="phone">Phone:</label><br>
+            <input type="tel" id="phone" name="phone"><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message"></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+        <div>
+            <p>Our Address: 123 Main Street, City, Country</p>
+            <p>Email: contact@company.com</p>
+            <p>Phone: +123 456 7890</p>
+            <iframe src="https://www.google.com/maps/embed?..." width="600" height="450"></iframe>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Page -->
+    <section id="why-choose-us" class="page" style="display:none;">
+        <h2>Why Choose Us</h2>
+        <p>Overview of the company's strengths and unique selling points.</p>
+        <div>
+            <h3>Client Success Stories</h3>
+            <p>Detailed case studies of our successful projects.</p>
+            <h3>Awards and Recognitions</h3>
+            <p>Our achievements in the industry.</p>
+        </div>
+    </section>
+
+    <!-- Services Details Page -->
+    <section id="services" class="page" style="display:none;">
+        <h2>Our Services</h2>
+        <div>
+            <h3>Web Development</h3>
+            <p>Description and examples of past projects.</p>
+            <h3>Mobile Development</h3>
+            <p>Description and examples of past projects.</p>
+            <h3>Data Analysis</h3>
+            <p>Description and examples of past projects.</p>
+            <h3>Graphics Design</h3>
+            <p>Description and examples of past projects.</p>
+            <h3>UI/UX Design</h3>
+            <p>Description and examples of past projects.</p>
+            <h3>Video Animation</h3>
+            <p>Description and examples of past projects.</p>
+        </div>
+    </section>
+
+    <!-- Hiring Vacancy Page -->
+    <section id="hiring" class="page" style="display:none;">
+        <h2>Current Job Openings</h2>
+        <div>
+            <h3>Job Title 1</h3>
+            <p>Job description and requirements.</p>
+            <a href="#">Apply Now</a>
+            <h3>Job Title 2</h3>
+            <p>Job description and requirements.</p>
+            <a href="#">Apply Now</a>
+        </div>
+        <div>
+            <h3>Employee Benefits</h3>
+            <p>Overview of employee benefits.</p>
+            <h3>Company Culture</h3>
+            <p>Information about the work environment.</p>
+        </div>
+    </section>
+
+    <!-- Login Page -->
+    <section id="login" class="page" style="display:none;">
+        <h2>Login</h2>
+        <form>
+            <label for="username">Username/Email:</label><br>
+            <input type="text" id="username" name="username"><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password"><br>
+            <button type="submit">Login</button>
+        </form>
+        <a href="#">Forgot your password?</a>
+    </section>
+
+    <!-- Profile Portal -->
+    <section id="profile" class="page" style="display:none;">
+        <h2>Profile Portal</h2>
+        <div>
+            <h3>Dashboard</h3>
+            <p>Overview of user activity and submissions.</p>
+            <h3>Profile Section</h3>
+            <p>User information and profile edit option.</p>
+            <h3>Project Submission</h3>
+            <form>
+                <label for="project">Submit a Project:</label><br>
+                <input type="text" id="project" name="project"><br>
+                <button type="submit">Submit</button>
+            </form>
+            <h3>Notifications</h3>
+            <p>Updates and messages.</p>
+            <h3>Support</h3>
+            <a href="#">Contact Support</a>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
